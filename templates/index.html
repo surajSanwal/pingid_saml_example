@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SAML SSO Example</title>
+</head>
+<body>
+    {% if user %}
+        <h1>Welcome {{ user.attributes.get('name', ['User'])[0] }}</h1>
+        <p>Your email: {{ user.attributes.get('email', [''])[0] }}</p>
+        <a href="/saml/logout">Logout</a>
+    {% else %}
+        <h1>Welcome Guest</h1>
+        <a href="/saml/login">Login with SAML</a>
+    {% endif %}
+</body>
+</html>

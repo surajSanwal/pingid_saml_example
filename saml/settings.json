@@ -1,0 +1,41 @@
+{
+    "strict": true,
+    "debug": true,
+    "sp": {
+        "entityId": "http://localhost:8000/saml/metadata",
+        "assertionConsumerService": {
+            "url": "http://localhost:8000/saml/acs",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        },
+        "singleLogoutService": {
+            "url": "http://localhost:8000/saml/sls",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+        "x509cert": "",
+        "privateKey": ""
+    },
+    "idp": {
+        "entityId": "https://auth.pingone.com/194c955a-00ad-4453-9e7e-6ea25b97fd43",
+        "singleSignOnService": {
+            "url": "https://auth.pingone.com/194c955a-00ad-4453-9e7e-6ea25b97fd43/saml20/idp/sso",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "singleLogoutService": {
+            "url": "https://auth.pingone.com/194c955a-00ad-4453-9e7e-6ea25b97fd43/saml20/idp/slo",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "x509cert": "MIIDrjCCApagAwIBAgIGAZNdTHQOMA0GCSqGSIb3DQEBCwUAMIGXMQswCQYDVQQGEwJVUzEWMBQGA1UECgwNUGluZyBJZGVudGl0eTEWMBQGA1UECwwNUGluZyBJZGVudGl0eTFYMFYGA1UEAwxPUGluZ09uZSBTU08gQ2VydGlmaWNhdGUgZm9yIFdvcmtmb3JjZSBTb2x1dGlvbiBFbnZpcm9ubWVudCBkZmNmZDQ5ZSBlbnZpcm9ubWVudDAeFw0yNDExMjQwODMxNTFaFw0yNTExMjQwODMxNTFaMIGXMQswCQYDVQQGEwJVUzEWMBQGA1UECgwNUGluZyBJZGVudGl0eTEWMBQGA1UECwwNUGluZyBJZGVudGl0eTFYMFYGA1UEAwxPUGluZ09uZSBTU08gQ2VydGlmaWNhdGUgZm9yIFdvcmtmb3JjZSBTb2x1dGlvbiBFbnZpcm9ubWVudCBkZmNmZDQ5ZSBlbnZpcm9ubWVudDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKmm5x78/h32kBQF8469i8nAdTicoZthsJx6hpTFNrETkd0bkZy+zywTd7VMexpsz9bMLgxiIvMzaNChxYsBYiX08FsHadsOhlDEqZsp/sYHpT4PJgyR3GqNZjbyPu/6dTDEVm2UgwRRoFsc38rVJzwHtppKmCQaoQpjQ6T8gYYiU37ezuQkHubqGBgb212ALDGZL/Amx8LliaAq0oU7zIPiNTWgMjObLoGSSWpTFEXKodxdSfX8x2pYzRy8iuY0B6d/NMLl7ZSBW1HU3x7P0kYkZSBOaWJeLwsLM+fyWSybOKXs1V82D3nynMFGN5zywt/fMvxeFREYmr9RyxxCorECAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAYdtkv8cReSHGSQi4u6YjDv/IQNAGRFs8vh1zdMDqyWIe+5yasZUVNFvDtMHtTWD93xe3AAvZThcGpbuuXnevxla7sBnDgRWdxGiYhYx9R6eU3MHNG7Fa3LofSrGg6ubECkPPsUrjfd47/jSbF5UwKJTswhCaNBchySVwmAi/O9ngI6DvNgjDTIVMbdR3FPsQI0ytVg02ON2S4BGa6V94rckMLNYVU0SGGVXFxmFbu2yRgPnjUMTmw9kmVN8JreWB9elxVrDBd2csnZ+2STcMeKkxJPB/a6/V4Tgpz0krPFUZcB+C3XTtGnM6Nn1YTgkTHrrHnR9Zs8AgFF7nPe4ZpQ=="
+    },
+    "security": {
+        "nameIdEncrypted": false,
+        "authnRequestsSigned": false,
+        "logoutRequestSigned": false,
+        "logoutResponseSigned": false,
+        "signMetadata": false,
+        "wantMessagesSigned": false,
+        "wantAssertionsSigned": false,
+        "wantNameIdEncrypted": false,
+        "requestedAuthnContext": true
+    }
+}
